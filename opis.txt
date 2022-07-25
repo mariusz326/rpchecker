@@ -1,0 +1,13 @@
+## Instalujemy wirtualne środowisko dla programu
+python3.9 -m venv venv
+source venv/bin/activate -- wchodzimy w venv
+
+
+## Doinstalowujemy odpowiednie pakiety
+python -m pip install aiohttp==3.8.1
+
+##Testujemy za pomocą:
+bpython
+>>> from rpchecker.checker import site_is_online
+>>> site_is_online("python.org")
+
